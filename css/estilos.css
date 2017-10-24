@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'DancingScript-Regular';
+  src:url(DancingScript-Regular.otf);
+}
+body{
+  background-color: #02010a;
+  font-family: Dancing Script, cursive;
+}
+
+header div{
+  margin: auto;
+}
+#image2:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+#image3:hover{
+  transform: translate3d(20px, -5px, 0px);
+  box-shadow: 2px 2px #82c3a6;
+}
+@media screen and (min-width: 901px) {
+  header {
+      animation-duration: 3s;
+      animation-name: slidein;
+  }
+
+  @keyframes slidein {
+      0%{
+          margin-top: 150%;
+          width: 900px;
+      }
+      60%{
+          margin-top: -5%;
+          width: 900px;
+      }
+
+      100%{
+          margin-top: 0%;
+          width: 900px;
+      }
+  }
+
+  #encabezado{
+    background-color: #5b7989;
+    height: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+  }
+  #encabezado h1{
+    color:white;
+    text-shadow: 2px 2px #02010a;
+    font-size: 2em;
+    text-align: left;
+  }
+  a{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5em;
+    color: white;
+  }
+
+  #contenido{
+    margin: auto;
+    width: 900px;
+    background-color: #82c3a6;
+    height:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #contenido img{
+    width: 60%;
+    display: block;
+    margin:auto;
+  }
+  #contenedor2{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    margin: auto;
+    background-color: #d5c75f;
+    border: 1px black solid;
+  }
+  #contenedor2 center{
+    width: 900px;
+    margin: auto;
+  }
+  #contenedor2 img{
+    padding: 0px;
+    width: 70%;
+    margin: 10px;
+  }
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  border-radius: 0px 0px 10px 10px;
+  height: auto;
+  background-color: #C6d5c5;
+  margin: auto;
+}
+
+footer div{
+  width: 20%;
+  padding: 25px;
+  text-align: justify;
+  font-size: 1em;
+}
+#logo img{
+  width: 60px;
+  border-radius: 10px;
+}
+#galeria{
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  margin: auto;
+  background-color: #d5c75f;
+}
+#galeria div{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+      animation-duration: 3s;
+      animation-name: slidein;
+  }
+
+  @keyframes slidein {
+      0%{
+          margin-top: 150%;
+          width: 100%;
+      }
+      60%{
+          margin-top: -5%;
+          width: 100%;
+      }
+
+      100%{
+          margin-top: 0%;
+          width: 100%;
+      }
+  }
+  #encabezado{
+    background-color: #5b7989;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+  }
+  #encabezado h1{
+    color:white;
+    text-shadow: 2px 2px #02010a;
+    font-size: 1.6em;
+    padding-left: 10px;
+  }
+
+  a{
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.5em;
+    color: white;
+  }
+  #contenido{
+    margin: auto;
+    width: 100%;
+    background-color: #82c3a6;
+    height:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #contenido img{
+    width: 70%;
+    display: block;
+    margin:auto;
+  }
+  #contenedor2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    background-color: #d5c75f;
+    border: 1px black solid;
+  }
+  #contenedor2 center{
+    margin: auto;
+  }
+  #contenedor2 img{
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    height: auto;
+    background-color: #C6d5c5;
+    margin: auto;
+  }
+  footer div{
+    width: auto;
+  }
+  #galeria{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    background-color: #d5c75f;
+  }
+  #galeria div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
